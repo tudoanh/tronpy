@@ -1,6 +1,10 @@
+import os
+
+MAINNET_URL = os.environ.get("TRONPY_MAINNET_URL", "https://api.trongrid.io")
+
 CONF_MAINNET = {
-    "fullnode": "https://api.trongrid.io",
-    "event": "https://api.trongrid.io",
+    "fullnode": MAINNET_URL,
+    "event": MAINNET_URL,
 }
 
 # The long running, maintained by the tron-us community
